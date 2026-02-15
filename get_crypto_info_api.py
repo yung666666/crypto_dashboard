@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 # --- API SETUP ---
-API_KEY = '0f26b54f55064476882f4ca74f8e314b' # Get your API key from CoinMarketCap
+API_KEY = st.secrets["CMC_API_KEY"] # Get your API key from CoinMarketCap
 HEADERS = {'X-CMC_PRO_API_KEY': API_KEY, 'Accepts': 'application/json'}
 
 st.set_page_config(page_title="HODL Intelligence", layout="wide")
